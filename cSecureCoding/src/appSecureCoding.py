@@ -72,7 +72,7 @@ def hardcoded_login():
 @app.route('/secure_coding/log_password')
 def log_password():
     password = request.args.get("password")
-    print(f"User entered password: {password}")
+    print("User entered a password (value redacted for security).")
     return "Check server logs!"
 
 @app.route('/secure_coding/read_file')
